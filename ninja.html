@@ -14,9 +14,12 @@
         <li class="orange">みかん</li>
         <li class="grape">ぶどう</li>
     </ul>
-    <script>
-        const fruits = document.getElementClassName("fruits");
-        alert(fluits[0]);
+    <script src="jquery-3.7.1.min.js">
+        $(function(){
+            $('li').on('click',function(){
+                alert($(this).attr('class'));    
+            });
+        });
     </script>
 </body>
 </html>
